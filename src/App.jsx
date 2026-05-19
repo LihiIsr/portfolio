@@ -2,24 +2,18 @@
 import "./style.css";
 import uxuilogo1 from "./assets/images/uxuilogo.png";
 
-import characterSrc from './assets/images/animated.png';
 import seatedCharacterSrc from './assets/images/seatedAnim.png';
 
-import myCv from './assets/files/ליהי ישראלי- קוח.pdf'
 import { useRef } from 'react';
 
-import siteCver from './assets/images/machtzavim.jpg';
-import lomdaCver from './assets/images/lomda.jpg';
-
-
-import  Card  from "./components/UI/Card";
-import  NavItem  from "./components/NavItem";
+import Cards from "./components/UI/Cards";
 import NavBar from "./components/NavBar";
 import CountUp from './components/UI/CountUp';
 import ScrollToTopButton from "./components/UI/ScrollToTopBtn";
 import ContactMe from "./components/UI/ContactMe";
+import About from "./components/About";
 
-import LogoLoop from './components/LogoLoop';
+import LogoLoop from './components/UI/LogoLoop';
 import { SiReact, SiVuedotjs, SiTailwindcss, SiFirebase, SiFigma, SiJavascript, SiCss3, SiHtml5, SiGit, SiNextdotjs } from 'react-icons/si';
 
 const techLogos = [
@@ -47,7 +41,6 @@ export const App = () => {
 
   return (
     <div className="desktop">
-      {/* nav bar */}
       <NavBar   
       onProjectsClick={() => scrollToSection(projectsRef)} 
       onAboutClick={() => scrollToSection(aboutRef)} 
@@ -55,27 +48,16 @@ export const App = () => {
 
       <div className="logo">
         <div className="div">Lihi Israeli</div>
-
         <div className="frontend-developer">Frontend Developer</div>
       </div>
 
       <div ref={aboutRef}  className="hero">
-        <div className="frame">
-          <a href="mailto:lihiisr@gmail.com" className="let-s-talk">Let’s Talk!</a>
-        </div>
-
-      <a href={myCv} download="ליהי ישראלי- קוח" target='_blank'  className="text-wrapper-2">
-       download my cv
-      </a>
-
-      <img className="character" src={characterSrc}/>
-
+        <About/>
       </div>
 
       
 
  <div style={{ height: '200px', position: 'relative', overflow: 'hidden', top:'990px'}}>
-      {/* Basic horizontal loop */}
       <LogoLoop
         logos={techLogos}
         speed={80}
@@ -94,46 +76,19 @@ export const App = () => {
 
       <div  ref={projectsRef} className="projects">
         <div className="projects-2">Projects</div>
-
-        <div className="cards">
-          <Card 
-          coverImg={siteCver} 
-          className="card-instance" 
-          title="Brand Site "
-          text='A branded site for the IDF unit "machtzavim", features include a CRUD application with firestore for an admin.'
-          tags={['vue', 'javascript', 'css','firestore', 'crud-application']}
-          openProject="https://machtzavim-site.web.app/"
-          openGitHub="https://github.com/LihiIsr/machtzavim-site-origin"
-           />
-
-          <Card
-            coverImg={lomdaCver}
-            className="card-instance"
-            eLearningPlatformClassName="card-2"
-            rectangle="image.png"
-            title="E-Learning platform"
-            text={
-              <>
-                an e-learning platform about organization safety, made for and
-                with a client.
-                <br />
-                includes an interactive map of the building with all the info needed
-                for a new employee.
-              </>
-            }
-            mostRecent
-            tags={['react', 'javascript', 'css']}
-            openProject="https://elearning-safety-benatav.web.app/"
-            openGitHub="https://github.com/LihiIsr/safety-benatav"
-          />
-        </div>
+        <Cards/>
+      
       </div>
 
     
       <div ref={contactRef} className="contact">
         <ContactMe className="contact-box"/>
       </div>
-      <img className="characterSeat" src={seatedCharacterSrc}/>
+
+      <div className="contactCharacter">
+        <img className="characterSeat" src={seatedCharacterSrc}/>
+        <p className="characterText">looking forward to hearing from you ;)</p>
+      </div>
 
 
       <div className="stats">

@@ -19,7 +19,10 @@
   --mono: ui-monospace, Consolas, monospace;
 
   --main: 'Unbounded', sans-serif;
-  --regular: 'Geist', Roboto;
+  /* --regular: 'Geist', sans-serif; */
+    /* --regular: 'Quicksand', sans-serif; */
+    --regular: "Comfortaa", sans-serif;
+
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;

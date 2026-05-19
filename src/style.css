@@ -5,7 +5,7 @@
     rgba(158, 151, 141, 1) 27%,
     rgba(140, 119, 102, 1) 54%,
     rgba(94, 63, 53, 1) 75%,
-    rgb(91, 68, 45) 100%)  ;
+    rgb(91 70 50) 100%)  ;
   min-height: 3400px;
   /* min-width: 1440px; */
   position: relative;
@@ -102,6 +102,70 @@
 
 }
 
+.desktop .about{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--regular);
+  text-align: left;
+  font-size: 2.3vw;
+  line-height: 1.2;
+  gap: 15px;
+  z-index: 2;
+  width: 50vw;
+  top: 2vh;
+  left: 2vw;
+  color: #d7cfc4;
+}
+
+.desktop .cookie-text{
+  font-family: var(--main);
+  color: rgb(255 195 195);
+  margin-top: 5.5vh;
+  font-size: 2.1vw;
+}
+
+.desktop .cookie{
+  position: absolute;
+  z-index: 5;
+  width: 15vw;
+  transition: transform 0.3s ease;
+}
+
+.float-wrapper {
+  position: absolute;
+  z-index: 5;
+  top: 38vh;
+  right: 52vw;
+  animation: floatCircle 5s ease-in-out infinite;
+}
+
+.cookie:hover {
+  transform: scale(1.05);
+}
+
+@keyframes floatCircle {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(6px, -8px) rotate(2deg);
+  }
+
+  50% {
+    transform: translate(0px, -12px) rotate(0deg);
+  }
+
+  75% {
+    transform: translate(-6px, -8px) rotate(-2deg);
+  }
+
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
 .desktop .frame {
   align-items: center;
   background-color: #8c7766;
@@ -129,6 +193,10 @@
 
 }
 
+.desktop .frame:hover{
+  background-color: #b39781;
+}
+
 .desktop .text-wrapper-2 {
   color: #bab0a1;
   font-family: var(--regular);
@@ -140,6 +208,11 @@
   margin-top: 449px;
   text-decoration: underline;
   width: 302px;
+}
+
+.desktop .text-wrapper-2:hover{
+  color: #ffffff;
+
 }
 
 .desktop .projects {
@@ -195,15 +268,26 @@
   position: absolute;
   top: 2874px;
   width: fit-content;
-    z-index: 5;
+  z-index: 5;
 
 }
 
 .desktop .characterSeat{
-    position: absolute;
-    bottom: -6vh;
-    width: 30vw;
-    left: -6vw;
+  width: 30vw;
+}
+
+.contactCharacter{
+  position: absolute;
+  bottom: -6vh;
+  left: -6vw;
+  display: flex;
+  align-items: center;
+
+}
+
+.characterText{
+  color:#d7cfc4;
+  font-size: 2vw;
 }
 
 .desktop .skills-text {

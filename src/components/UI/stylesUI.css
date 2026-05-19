@@ -9,6 +9,20 @@
     cursor:pointer ;
 }
 
+.top-scroll-btn:hover {
+  animation: float 0.4s ease-in-out 4 alternate;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-8px);
+  }
+}
+
 .image-wrapper{
   overflow: hidden;
   width: 100%;
