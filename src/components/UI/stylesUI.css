@@ -1,0 +1,126 @@
+.top-scroll-btn{
+    position: fixed;
+    bottom: 40px; 
+    right: 40px; 
+    padding: 10px;
+    width:3em; 
+    height:3em;
+    color:black;
+    cursor:pointer ;
+}
+
+.image-wrapper{
+  overflow: hidden;
+  width: 100%;
+}
+
+.card-img{
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.desktop .card-instance:hover .card-img{
+  transform: scale(1.15);
+}
+
+.desktop .card-instance:hover{
+    box-shadow: 8px 8px 7px rgba(234, 233, 233, 0.237);
+
+}
+
+.card-text{
+    display: flex;
+    margin-left: 3px;
+    text-align: left;
+    gap: 10px;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-title{
+    font-size: 2vw;
+    margin: 10px 0;
+}
+
+.most-recent{
+    color: rgba(94, 63, 53, 1);
+    font-weight: 500;
+}
+
+.tags-container{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom: 6px;
+}
+
+.tag{
+    border-radius: 15px;
+    border: 1px solid gray;
+    padding-right: 8px;
+    padding-left: 8px;
+    color: #4b4949;
+    font-size: 0.6rem;  
+    line-height: 1.5;
+}
+
+.card-actions{
+    display: flex;
+    gap: 15px;
+    font-weight: 500;
+}
+
+.card-action{
+    all: unset;
+    text-decoration: underline;
+    font-family: var(--main);
+    font-size: 0.9vw;
+    text-transform: capitalize;
+}
+
+.card-action:hover{
+    color: rgb(255, 255, 255);
+}
+
+.card-bottom{
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    gap: 15vh;
+}
+
+.contact-me {
+  color: #271c11;
+  font-family: var(--main);
+  font-size: 36px;
+  font-weight: 400;
+  height: fit-content;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+  width: 258px;
+}
+
+.contact-icons{
+    display: flex;
+    gap: 5vw;
+    margin-left: 10vw;
+
+}
+
+.contact-icon{
+    color: rgba(186, 176, 161, 1);
+    width: 5em;
+    height: 5em;
+}
+
+
+  
+

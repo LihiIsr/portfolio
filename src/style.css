@@ -1,0 +1,473 @@
+.desktop {
+  background: linear-gradient(
+    180deg,
+    rgba(186, 176, 161, 1) 0%,
+    rgba(158, 151, 141, 1) 27%,
+    rgba(140, 119, 102, 1) 54%,
+    rgba(94, 63, 53, 1) 75%,
+    rgb(91, 68, 45) 100%)  ;
+  min-height: 3400px;
+  /* min-width: 1440px; */
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.desktop .nav-bar {
+  height: 41px;
+  left: 723px;
+  position: absolute;
+  top: 80px;
+  width: 691px;
+  z-index: 5;
+}
+
+.desktop .nav-item{
+  cursor:pointer ;
+
+}
+
+.desktop .nav-item-instance {
+  left: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.desktop .design-component-instance-node {
+  width: 238px !important;
+}
+
+.desktop .nav-item-2 {
+  left: 181px !important;
+  position: absolute !important;
+  top: 0 !important;
+  width: 238px !important;
+}
+
+.desktop .nav-item-3 {
+  left: 400px !important;
+  position: absolute !important;
+  top: 0 !important;
+  width: 291px !important;
+}
+
+.desktop .nav-item-4 {
+  width: 291px !important;
+}
+
+.desktop .logo {
+  height: 113px;
+  left: 60px;
+  position: absolute;
+  top: 44px;
+  width: 491px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.desktop .div {
+  color: #271c11;
+  font-family: var(--main);
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  width: fit-content;
+}
+
+.desktop .frontend-developer {
+  color: #271c11;
+  font-family: var(--regular);
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.desktop .hero {
+  background-color: #5e3f35;
+  display: flex;
+  gap: 39px;
+  height: 556px;
+  position: absolute;
+  top: 250px;
+  width: 1214px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  overflow: visible;
+
+}
+
+.desktop .frame {
+  align-items: center;
+  background-color: #8c7766;
+  border-radius: 30px;
+  display: flex;
+  gap: 10px;
+  height: 58px;
+  justify-content: center;
+  margin-left: 67px;
+  margin-top: 444px;
+  position: relative;
+  width: 229px;
+}
+
+.desktop .let-s-talk {
+  color: #271c11;
+  font-family: var(--main);
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: fit-content;
+  text-decoration: none;
+
+}
+
+.desktop .text-wrapper-2 {
+  color: #bab0a1;
+  font-family: var(--regular);
+  font-size: 32px;
+  font-weight: 400;
+  height: 53px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: 449px;
+  text-decoration: underline;
+  width: 302px;
+}
+
+.desktop .projects {
+  display: flex;
+  flex-direction: column;
+  gap: 105px;
+  height: 574px;
+  left: 116px;
+  position: absolute;
+  top: 1910px;
+  width: 805px;
+}
+
+.desktop .projects-2 {
+  color: #271c11;
+  font-family: var(--main);
+  font-size: 36px;
+  font-weight: 400;
+  height: 45px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+  width: 179px;
+}
+
+.desktop .cards {
+  display: flex;
+  gap: 85px;
+  width: 803px;
+}
+
+.desktop .card-instance {
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  color: black;
+  background-color: rgba(186, 176, 161, 1);
+  left: unset !important;
+  top: unset !important;
+  box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.25);
+  width: 320px;
+  cursor: pointer;
+  /* height: fit-content; */
+}
+
+.desktop .card-2 {
+  width: 41.78% !important;
+}
+
+.desktop .contact {
+  height: 45px;
+  left: 113px;
+  position: absolute;
+  top: 2874px;
+  width: fit-content;
+    z-index: 5;
+
+}
+
+.desktop .characterSeat{
+    position: absolute;
+    bottom: -6vh;
+    width: 30vw;
+    left: -6vw;
+}
+
+.desktop .skills-text {
+  display: flex;
+  height: 32px;
+  left: 45px;
+  position: absolute;
+  top: 1086px;
+  width: 1386px;
+}
+
+.desktop .text-wrapper-3 {
+  color: #271c11;
+  font-family: var(--main);
+  font-size: 32px;
+  font-weight: 400;
+  height: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  width: 153px;
+}
+
+.desktop .react {
+  color: #271c11;
+  font-family: var(--main);
+  font-size: 32px;
+  font-weight: 400;
+  height: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 60px;
+  white-space: nowrap;
+  width: 130px;
+}
+
+.desktop .javascript {
+  color: #271c11;
+  font-family: var(--main);
+  font-size: 32px;
+  font-weight: 400;
+  height: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 72px;
+  white-space: nowrap;
+  width: 241px;
+}
+
+.desktop .html {
+  color: #271c11;
+  font-family: var(--main);
+  font-size: 32px;
+  font-weight: 400;
+  height: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 43px;
+  white-space: nowrap;
+  width: 109px;
+}
+
+.desktop .figma {
+  color: #271c11;
+  font-family: var(--main);
+  font-size: 32px;
+  font-weight: 400;
+  height: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 66px;
+  white-space: nowrap;
+  width: 130px;
+}
+
+.desktop .css {
+  color: #271c11;
+  font-family: var(--main);
+  font-size: 32px;
+  font-weight: 400;
+  height: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 72px;
+  white-space: nowrap;
+  width: 130px;
+}
+
+.desktop .UX-UI {
+  color: #271c11;
+  font-family: var(--main);
+  font-size: 32px;
+  font-weight: 400;
+  height: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 36px;
+  white-space: nowrap;
+  width: 130px;
+}
+
+.desktop .skills {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 41px;
+  height: 178px;
+  left: 19px;
+  position: absolute;
+  top: 908px;
+}
+
+.desktop .vuelogo {
+  aspect-ratio: 1.16;
+  height: 148px;
+  object-fit: cover;
+  position: relative;
+  width: 171px;
+}
+
+.desktop .reactlogo {
+  aspect-ratio: 1.13;
+  height: 148px;
+  object-fit: cover;
+  position: relative;
+  width: 167px;
+}
+
+.desktop .jslogo {
+  aspect-ratio: 1.6;
+  height: 148px;
+  object-fit: cover;
+  position: relative;
+  width: 237px;
+}
+
+.desktop .img {
+  aspect-ratio: 1;
+  height: 148px;
+  object-fit: cover;
+  position: relative;
+  width: 148px;
+}
+
+.desktop .figmalogo {
+  aspect-ratio: 0.84;
+  height: 160px;
+  position: relative;
+  width: 135px;
+}
+
+.desktop .uxuilogo {
+  aspect-ratio: 1;
+  height: 146px;
+  object-fit: cover;
+  position: relative;
+  width: 146px;
+}
+
+.desktop .git-logo {
+  aspect-ratio: 1;
+  height: 170px;
+  left: 20px;
+  object-fit: cover;
+  position: absolute;
+  top: 1173px;
+  width: 170px;
+}
+
+.desktop .nextjslogo {
+  aspect-ratio: 1.85;
+  height: 140px;
+  left: 227px;
+  object-fit: cover;
+  position: absolute;
+  top: 1188px;
+  width: 259px;
+}
+
+.desktop .stats {
+  display: flex;
+  gap: 129px;
+  height: 143px;
+  left: 113px;
+  position: absolute;
+  top: 1400px;
+  width: 947px;
+}
+
+.desktop .clients-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  height: 143px;
+  width: 291px;
+}
+
+.desktop .text-wrapper-4 {
+  color: #271c11;
+  font-family: var(--main);
+  font-size: 80px;
+  font-weight: 400;
+  height: 92px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 18px;
+  white-space: nowrap;
+  width: 140px;
+}
+
+.desktop .text-wrapper-5 {
+  color: #271c11;
+  font-family: var(--main);
+  font-size: 36px;
+  font-weight: 400;
+  height: 45px;
+  letter-spacing: 0;
+  line-height: normal;
+  width: 287px;
+}
+
+.desktop .hours-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  height: 143px;
+  width: 531px;
+}
+
+.desktop .text-wrapper-6 {
+  color: #271c11;
+  font-family: var(--main);
+  font-size: 80px;
+  font-weight: 400;
+  height: 92px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  width: 478px;
+}
+
+.desktop .p {
+  color: #271c11;
+  font-family: var(--main);
+  font-size: 36px;
+  font-weight: 400;
+  height: 45px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 5px;
+  width: 522px;
+}
+
+.nav-bar{
+  display: flex;
+  gap: 5vw;
+  font-size: 2vw;
+  color: #271c11;
+}
+
+
+.character{
+  position: absolute;
+  z-index: 2;
+  width: 38vw;
+  bottom: -0.5vh;
+  right: 2vw;
+}
