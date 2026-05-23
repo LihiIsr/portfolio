@@ -105,12 +105,12 @@
 }
 
 .contact-box{
-    display: flex;
-    flex-direction: column;
-    gap: 15vh;
+  display: flex;
+  flex-direction: column;
+  gap: 15vh;
 }
 
-.contact-me {
+.custom-header{
   color: #271c11;
   font-family: var(--main);
   font-size: 36px;
@@ -119,7 +119,7 @@
   letter-spacing: 0;
   line-height: normal;
   text-decoration: underline;
-  width: 258px;
+  width: fit-content;
 }
 
 .contact-icons{
@@ -130,11 +130,47 @@
 }
 
 .contact-icon{
-    color: rgba(186, 176, 161, 1);
-    width: 5em;
-    height: 5em;
+  color: rgba(186, 176, 161, 1);
+  width: 5em;
+  height: 5em;
+}
+
+.clients-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.count-up-num {
+  color: #271c11;
+  font-family: var(--main);
+  font-size: 80px;
+  font-weight: 400;
+  height: 92px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 18px;
+  white-space: nowrap;
+  width: 140px;
 }
 
 
+.count-up-text {
+  color: #271c11;
+  font-family: var(--main);
+  font-size: 36px;
+  font-weight: 400;
+  height: 45px;
+  letter-spacing: 0;
+  line-height: normal;
+  width: fit-content;
+}
+
   
+.logo-loop-container {
+  height: 200px;
+  overflow: hidden;
+}
 

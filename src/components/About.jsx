@@ -26,7 +26,7 @@ export default function About() {
                 <a href="mailto:lihiisr@gmail.com" className="let-s-talk">Let’s Talk!</a>
               </div>
       
-            <a href={myCv} download="ליהי ישראלי- קוח" target='_blank'  className="text-wrapper-2">
+            <a href={myCv} download="ליהי ישראלי- קוח" target='_blank'  className="download-text">
              download my cv
             </a>
       

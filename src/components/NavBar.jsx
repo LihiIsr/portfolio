@@ -1,25 +1,27 @@
 import React from 'react'
-import NavItem from './NavItem'
+import NavItem from './UI/NavItem'
 export default function NavBar({ onAboutClick, onProjectsClick, onContactClick }) {
   return (
+  <div className='navigation'>
     <div className="nav-bar">
-           <NavItem className="nav-item-instance"
+           <NavItem
            text="About"
            onClick={onAboutClick}
             />
            <NavItem
-             aboutClassName="design-component-instance-node"
-             className="nav-item-2"
-             text="Projects"
+            text="Projects"
             onClick={onProjectsClick}
            />
            <NavItem
-             aboutClassName="nav-item-4"
-             className="nav-item-3"
              text="Contact Me"
              onClick={onContactClick}
            />
-         </div>
+    </div>
+     <div className="logo">
+            <div className="div">Lihi Israeli</div>
+            <div className="frontend-developer">Frontend Developer</div>
+    </div>
+  </div>
    
   )
 }

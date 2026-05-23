@@ -2,11 +2,15 @@ import React from 'react'
 import { FaLinkedin } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
+import CustomHeader from './UI/CustomHeader';
+import seatedCharacterSrc from '../assets/images/seatedAnim.png';
+
 
 export default function ContactMe({className}) {
   return (
-    <div className={className}>
-        <div className="contact-me">Contact Me</div>
+    <>
+   
+    <CustomHeader>Contact Me</CustomHeader>
         <div className='contact-icons'>
              <a href="https://www.linkedin.com/in/israeli-lihi/" target='_blank'   rel="noopener noreferrer">
                 <FaLinkedin className='contact-icon' />
@@ -18,9 +22,14 @@ export default function ContactMe({className}) {
                 <FaWhatsapp className='contact-icon'/>
 
             </a>
-
         </div>
 
-    </div>
+      <div className="contactCharacter">
+        <img className="characterSeat" src={seatedCharacterSrc}/>
+        <p className="characterText">looking forward to hearing from you ;)</p>
+      </div>
+
+    </>
+
   )
 }

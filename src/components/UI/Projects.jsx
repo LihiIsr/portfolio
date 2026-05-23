@@ -1,5 +1,5 @@
 import React from 'react'
-import  Card  from "./Card";
+import  Card  from "./ProjectCard";
 
 import siteCover from '../../assets/images/machtzavim.jpg';
 import lomdaCover from '../../assets/images/lomda.jpg';
