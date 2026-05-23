@@ -16,21 +16,23 @@ export default function About() {
                 <p className="cookie-text">
                 My adorable kitten, Cookie, appreciates your visit :)
                 </p>
-              </div>
+
+          <div className='actions'>
+            <div className="frame">
+                    <a href="mailto:lihiisr@gmail.com" className="let-s-talk">Let’s Talk!</a>
+                  </div>
+          
+              <a href={myCv} download="ליהי ישראלי- קוח" target='_blank'  className="download-text">
+                download my cv
+              </a>
+          </div>
+        </div>
       
-              <div className="float-wrapper">
-                  <img className="cookie" src={cookieSrc}/>
-              </div>
-      
-              <div className="frame">
-                <a href="mailto:lihiisr@gmail.com" className="let-s-talk">Let’s Talk!</a>
-              </div>
-      
-            <a href={myCv} download="ליהי ישראלי- קוח" target='_blank'  className="download-text">
-             download my cv
-            </a>
-      
-            <img className="character" src={characterSrc}/>
+        <div className="float-wrapper">
+            <img className="cookie" src={cookieSrc}/>
+        </div>
+             
+        <img className="character" src={characterSrc}/>
     </>
   )
 }

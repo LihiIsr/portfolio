@@ -83,6 +83,7 @@
 }
 
 .desktop .about{
+  position: relative;
   display: flex;
   flex-direction: column;
   font-family: var(--regular);
@@ -95,6 +96,14 @@
   top: 2vh;
   left: 2vw;
   color: #d7cfc4;
+}
+
+.actions{
+  margin-top: 4vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4vw;
 }
 
 .desktop .cookie-text{
@@ -153,8 +162,8 @@
   gap: 10px;
   height: 58px;
   justify-content: center;
-  margin-left: 67px;
-  margin-top: 444px;
+  /* margin-left: 67px;
+  margin-top: 444px; */
   position: relative;
   width: 229px;
 }
@@ -181,10 +190,8 @@
   font-family: var(--regular);
   font-size: 32px;
   font-weight: 400;
-  height: 53px;
   letter-spacing: 0;
   line-height: normal;
-  margin-top: 449px;
   text-decoration: underline;
   width: 302px;
 }

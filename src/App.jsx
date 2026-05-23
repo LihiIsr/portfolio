@@ -27,7 +27,7 @@ export const App = () => {
       onAboutClick={() => scrollToSection(aboutRef)} 
       onContactClick={() => scrollToSection(contactRef)} />
 
-      <div ref={aboutRef}  className="hero">
+      <div ref={aboutRef} className="hero">
         <About/>
       </div>
 
