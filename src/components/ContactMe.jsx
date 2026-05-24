@@ -11,7 +11,14 @@ export default function ContactMe({className}) {
     <>
    
     <CustomHeader>Contact Me</CustomHeader>
-        <div className='contact-icons'>
+    <div style={{display:'flex', alignItems:'center', position:'relative', left:'-12vw'}}>
+
+        <img className="characterSeat" src={seatedCharacterSrc}/>
+
+        <div style={{display:'flex', flexDirection:'column', gap:'6vh'}}>
+              <p className="characterText">looking forward to hearing from you ;)</p>
+
+             <div className='contact-icons'>
              <a href="https://www.linkedin.com/in/israeli-lihi/" target='_blank'   rel="noopener noreferrer">
                 <FaLinkedin className='contact-icon' />
             </a>
@@ -22,12 +29,17 @@ export default function ContactMe({className}) {
                 <FaWhatsapp className='contact-icon'/>
 
             </a>
+            </div>
         </div>
 
-      <div className="contactCharacter">
+    </div>
+          
+       
+
+      {/* <div className="contactCharacter">
         <img className="characterSeat" src={seatedCharacterSrc}/>
         <p className="characterText">looking forward to hearing from you ;)</p>
-      </div>
+      </div> */}
 
     </>
 

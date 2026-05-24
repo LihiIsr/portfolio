@@ -11,6 +11,8 @@ import CustomHeader from "./components/UI/CustomHeader";
 import Stats from "./components/Stats";
 import TechStack from "./components/UI/TechStack";
 
+import Nav from "./components/Nav";
+
 export const App = () => {
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
@@ -22,10 +24,15 @@ export const App = () => {
 
   return (
     <div className="desktop">
-      <NavBar   
+
+      {/* <NavBar   
       onProjectsClick={() => scrollToSection(projectsRef)} 
       onAboutClick={() => scrollToSection(aboutRef)} 
-      onContactClick={() => scrollToSection(contactRef)} />
+      onContactClick={() => scrollToSection(contactRef)} /> */}
+
+        <Nav onProjectsClick={() => scrollToSection(projectsRef)} 
+      onAboutClick={() => scrollToSection(aboutRef)} 
+      onContactClick={() => scrollToSection(contactRef)}/>
 
       <div ref={aboutRef} className="hero">
         <About/>
