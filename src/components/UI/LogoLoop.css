@@ -6,6 +6,7 @@
   --logoloop-fadeColorAuto: #ffffff;
 }
 
+
 .logoloop--vertical {
   height: 100%;
   display: inline-block;
@@ -182,3 +183,6 @@
     transition: none !important;
   }
 }
+
+
+

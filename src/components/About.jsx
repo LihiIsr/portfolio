@@ -1,6 +1,6 @@
 import React from 'react'
 import myCv from '../assets/files/ליהי ישראלי- קוח.pdf'
-import cookieSrc from '../assets/images/cookie3.png';
+import cookieSrc from '../assets/images/cookie.svg';
 import characterSrc from '../assets/images/animated.png';
 
 export default function About() {

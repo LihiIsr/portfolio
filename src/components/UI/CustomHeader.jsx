@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function CustomHeader({children}) {
+export default function CustomHeader({children, className}) {
   return (
-    <div className='custom-header'>
+    <div className={className}>
       {children}
     </div>
   )

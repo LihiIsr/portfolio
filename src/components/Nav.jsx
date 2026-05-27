@@ -53,7 +53,7 @@ export default function Nav({onAboutClick, onProjectsClick, onContactClick}){
 
                 .navigation{
                     width: 100%;
-                    height: 50px;
+                    height: 120px;
                     position:relative;
                     top:3vh;
                     z-index:6;
@@ -64,7 +64,6 @@ export default function Nav({onAboutClick, onProjectsClick, onContactClick}){
                     display:flex;
                     position:absolute;
                     right:2vw;
-                    flex-wrap: wrap;
                     float: right;
                     margin: 0px;
                     padding: 0px;
@@ -73,6 +72,7 @@ export default function Nav({onAboutClick, onProjectsClick, onContactClick}){
                     gap: 5vw;
                     font-size: 2vw;
                     color: #271c11;
+ 
                 }
                 .navigation ul li{
                     list-style-type: none;
@@ -102,15 +102,23 @@ export default function Nav({onAboutClick, onProjectsClick, onContactClick}){
                    
                     .navigation ul{
                         display: ${hamburgerOpen ? 'inline' : 'none'};
-                        height: 30vh;
+                        height: 100vh;
                         width: 40vw;
                         margin-top: 50px;
                         position: absolute;
                         font-size:4vw;
+                        right:0vw;
+                        background: rgb(141 135 135 / 7%);
+                        backdrop-filter: blur(10px);
+
+
                     }
 
                     .nav-item{
                     border: 1px black dotted;
+                    margin:30px !important;
+                    padding:10px;
+                    white-space:nowrap;
                     }
                 }
                 

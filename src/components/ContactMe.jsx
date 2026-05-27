@@ -10,12 +10,14 @@ export default function ContactMe({className}) {
   return (
     <>
    
-    <CustomHeader>Contact Me</CustomHeader>
-    <div style={{display:'flex', alignItems:'center', position:'relative', left:'-12vw'}}>
 
-        <img className="characterSeat" src={seatedCharacterSrc}/>
+   
 
-        <div style={{display:'flex', flexDirection:'column', gap:'6vh'}}>
+           <> 
+            <CustomHeader className='custom-header contact-header'>Let's get in touch!</CustomHeader>
+             <div className='contact-inner'>
+            <img className="characterSeat" src={seatedCharacterSrc}/>
+              <div className='contact-box'>
               <p className="characterText">looking forward to hearing from you ;)</p>
 
              <div className='contact-icons'>
@@ -32,14 +34,12 @@ export default function ContactMe({className}) {
             </div>
         </div>
 
-    </div>
-          
+             </div>
+        </> 
        
 
-      {/* <div className="contactCharacter">
-        <img className="characterSeat" src={seatedCharacterSrc}/>
-        <p className="characterText">looking forward to hearing from you ;)</p>
-      </div> */}
+      
+          
 
     </>
 

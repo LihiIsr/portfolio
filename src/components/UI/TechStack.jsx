@@ -1,7 +1,7 @@
 import React from 'react'
 import LogoLoop from './LogoLoop';
 import { SiReact, SiVuedotjs, SiTailwindcss, SiFirebase, SiFigma, SiJavascript, SiCss3, SiHtml5, SiGit, SiNextdotjs } from 'react-icons/si';
-
+import { useState, useEffect } from 'react';
 
 const techLogos = [
   { node: <SiReact />, title: "React", href: "https://react.dev" },
@@ -18,13 +18,25 @@ const techLogos = [
 ];
 
 export default function TechStack() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+useEffect(() => {
+  const handleResize = () => {
+    setIsMobile(window.innerWidth < 768);
+  };
+
+  window.addEventListener("resize", handleResize);
+
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
+
   return (
      <div className="logo-loop-container">
       <LogoLoop
         logos={techLogos}
         speed={80}
         direction="left"
-        logoHeight={60}
+        logoHeight={isMobile ? 40 : 60}
         gap={60}
         hoverSpeed={0}
         scaleOnHover
