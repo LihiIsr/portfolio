@@ -342,6 +342,10 @@
     gap: 13vh !important;
     padding-left: 9vw !important;
   }
+
+  .characterText{
+  font-size: 2.4vw !important;
+}
 }
 
 @media (max-width: 1044px){
@@ -393,6 +397,11 @@
 }
 .cookie{width: 81px;}
 
+.projects{
+  width: 100vw !important;
+  align-items: center;
+}
+
 }
 
 @media (max-width: 420px) {
@@ -408,5 +417,11 @@
   }
 
   .cookie{width: 56px;}
+
+
+  .stats{
+    padding-left: 2vw !important;
+  }
+
 
 }

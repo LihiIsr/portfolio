@@ -228,6 +228,11 @@ font-size: clamp(1.8rem, 3.7vw, 2.25rem);
 .contact-header{
   padding-top: 14vh !important;
 }
+
+.custom-header{
+  align-self: flex-start;
+  padding-left: 9vw !important;
+}
 }
 
 @media (max-width:420px) {
@@ -247,6 +252,11 @@ font-size: clamp(1.8rem, 3.7vw, 2.25rem);
 
 .top-scroll-btn{
   right: 20px !important;
+}
+
+.custom-header{
+  align-self: flex-start;
+  padding-left: 5vw !important;
 }
 
 }
