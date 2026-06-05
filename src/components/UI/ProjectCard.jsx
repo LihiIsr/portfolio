@@ -12,7 +12,7 @@ export default function Card(
   openGitHub
 }) {
   return (
-    <div className={className}>
+    <div className={className}  onClick={() => window.open(openProject, "_blank")}>
       <div className="image-wrapper">
         <img className="card-img" src={coverImg} />
       </div>

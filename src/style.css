@@ -115,17 +115,6 @@
   font-size: 2.1vw;
 }
 
-/* .desktop .cookie{
-  display: block;
-  z-index: 5;
-  width: clamp(90px, 15vw, 220px);
-  transition: transform 0.3s ease;
-  transform: translateZ(0);
-  backface-visibility: hidden;
-  will-change: transform;
-  image-rendering: -webkit-optimize-contrast;
-} */
-
 .cookie {
   width: 170px;
   display: block;
@@ -200,7 +189,7 @@
 .desktop .download-text {
   color: #bab0a1;
   font-family: var(--regular);
-  font-size: clamp(0.5rem, 2vw, 1.5rem);  
+  font-size: clamp(0.55rem, 2vw, 1.8rem);  
   font-weight: 400;
   letter-spacing: 0;
   line-height: normal;
@@ -251,18 +240,6 @@
   cursor: pointer;
 }
 
-.desktop .characterSeat{
-  width: 30vw;
-}
-
-.contactCharacter{
-  position:relative;
-  bottom: 20vh;
-  left: -12vw;
-  display: flex;
-  align-items: center;
-
-}
 
 .characterText{
   color:#d7cfc4;
@@ -344,7 +321,7 @@
   }
 
   .characterText{
-  font-size: 2.4vw !important;
+  font-size: 2.7vw !important;
 }
 }
 
@@ -390,16 +367,15 @@
    .actions{
     padding-top: 1vh !important;
    }
-
-  .contact-icon{
-  width: 2em;
-  height: 2em;
-}
 .cookie{width: 81px;}
 
 .projects{
   width: 100vw !important;
   align-items: center;
+}
+
+.contact-character{
+  width: 19vw !important;
 }
 
 }

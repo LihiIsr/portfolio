@@ -3,7 +3,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import CustomHeader from './UI/CustomHeader';
-import seatedCharacterSrc from '../assets/images/seatedAnim.png';
+import seatedCharacterSrc from '../assets/images/contactAnim.webp';
 
 
 export default function ContactMe({className}) {
@@ -16,7 +16,7 @@ export default function ContactMe({className}) {
            <> 
             <CustomHeader className='custom-header contact-header'>Let's get in touch!</CustomHeader>
              <div className='contact-inner'>
-            <img className="characterSeat" src={seatedCharacterSrc}/>
+            <img className="contact-character" src={seatedCharacterSrc}/>
               <div className='contact-box'>
               <p className="characterText">looking forward to hearing from you ;)</p>
 

@@ -2,11 +2,25 @@ import Hamburger from "./UI/Hamburger";
 import NavItem from './UI/NavItem';
 import "./Nav.css";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Nav({onAboutClick, onProjectsClick, onContactClick}){
-
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+
+    useEffect(() => {
+    const handleScroll = () => {
+        setHamburgerOpen(false);
+    };
+
+    if (hamburgerOpen) {
+        window.addEventListener("scroll", handleScroll);
+    }
+
+    return () => {
+        window.removeEventListener("scroll", handleScroll);
+    };
+    }, [hamburgerOpen]);
 
     const toggleHamburger = () =>{
         setHamburgerOpen(!hamburgerOpen);

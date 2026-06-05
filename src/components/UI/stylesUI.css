@@ -35,13 +35,17 @@
   transition: transform 0.3s ease;
 }
 
-.desktop .card-instance:hover .card-img{
+
+@media (hover: hover) {
+  .card-instance:hover .card-img{
   transform: scale(1.15);
 }
-
-.desktop .card-instance:hover{
+.card-instance:hover{
     box-shadow: 8px 8px 7px rgba(234, 233, 233, 0.237);
-
+}
+.card-action:hover{
+    color: rgb(255, 255, 255);
+}
 }
 
 .card-text{
@@ -94,10 +98,6 @@ font-size: clamp(0.875rem, 0.9vw, 1rem);
     text-transform: capitalize;
 }
 
-.card-action:hover{
-    color: rgb(255, 255, 255);
-}
-
 .card-bottom{
     margin-top: auto;
     display: flex;
@@ -110,10 +110,12 @@ font-size: clamp(0.875rem, 0.9vw, 1rem);
     height: fit-content;
     width: 100vw;
     z-index: 5;
+    gap: 10vh;
     display: flex;
     flex-direction: column;
     border-top: 2px black dashed;
     margin-top: 10vh;
+    margin-bottom: 3vh;
 }
 
 .custom-header{
@@ -137,7 +139,9 @@ font-size: clamp(1.8rem, 3.7vw, 2.25rem);
 
 .contact-inner{
  display:flex;
+ gap: 1.5vw;
   align-items:center;
+  margin-left: 4vw;
 }
 
 .contact-box{
@@ -157,6 +161,10 @@ font-size: clamp(1.8rem, 3.7vw, 2.25rem);
   color: rgba(186, 176, 161, 1);
   width: 5em;
   height: 5em;
+}
+
+.contact-character{
+  width: 15vw;
 }
 
 .clients-stats {
@@ -233,6 +241,10 @@ font-size: clamp(1.8rem, 3.7vw, 2.25rem);
   align-self: flex-start;
   padding-left: 9vw !important;
 }
+  .contact-icon{
+  width: 2em;
+  height: 2em;
+}
 }
 
 @media (max-width:420px) {
@@ -251,7 +263,7 @@ font-size: clamp(1.8rem, 3.7vw, 2.25rem);
 }
 
 .top-scroll-btn{
-  right: 20px !important;
+  right: 10px !important;
 }
 
 .custom-header{

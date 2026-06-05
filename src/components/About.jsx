@@ -1,7 +1,7 @@
 import React from 'react'
 import myCv from '../assets/files/ליהי ישראלי- קוח.pdf'
 import cookieSrc from '../assets/images/cookie.svg';
-import characterSrc from '../assets/images/animated.png';
+import characterSrc from '../assets/images/heroAnim.webp';
 
 export default function About() {
   return (
