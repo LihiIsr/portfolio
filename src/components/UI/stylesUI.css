@@ -45,6 +45,7 @@
 }
 .card-action:hover{
     color: rgb(255, 255, 255);
+    color: #5e3f35;
 }
 }
 
@@ -209,6 +210,11 @@ font-size: clamp(1.8rem, 3.7vw, 2.25rem);
   overflow: hidden;
 }
 
+@media (min-width:1800px) {
+  .card-instance{
+    width: 370px !important;
+  }
+}
 
 @media (min-width:768px) and (max-width: 1045px) {
 

@@ -32,7 +32,13 @@ export default function About() {
             <img className="cookie" src={cookieSrc}/>
         </div>
              
-        <img className="character" src={characterSrc}/>
+        <img
+        className="character"
+        src={characterSrc}
+        alt="Lihi"
+        loading="eager"
+        fetchPriority="high"
+      />
     </>
   )
 }
