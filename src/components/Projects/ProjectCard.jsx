@@ -1,4 +1,3 @@
-import React from 'react'
 import Tag from '../UI/Tag'
 
 export default function Card(
@@ -18,7 +17,7 @@ export default function Card(
           window.open(openProject, "_blank");
         }}  >
       <div className="image-wrapper">
-        <img className="card-img" src={coverImg} />
+        <img className="card-img" src={coverImg} alt={title} />
       </div>
       <div className='card-text'>
         <h1 className='card-title'>{title}</h1>
@@ -33,7 +32,7 @@ export default function Card(
                 rel="noopener noreferrer">open on github</a>
             </div>
             <div className="tags-container">
-            {tags.map((tag,index)=> <Tag key={index} name={tag}/>)}
+            {tags.map((tag)=> <Tag key={tag} name={tag}/>)}
             </div>
         </div>
        

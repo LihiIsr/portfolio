@@ -1,4 +1,3 @@
-import React from 'react'
 import  Card  from "./ProjectCard";
 
 import siteCover from '../../assets/images/machtzavim.jpg';

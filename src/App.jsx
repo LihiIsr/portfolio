@@ -7,7 +7,7 @@ import ScrollToTopButton from "./components/UI/ScrollToTopBtn";
 import ContactMe from "./components/ContactMe/ContactMe";
 import About from "./components/About/About";
 import CustomHeader from "./components/UI/CustomHeader";
-import Stats from "./components/Stats/stats";
+import Stats from "./components/Stats/Stats";
 import TechStack from "./components/UI/LogoLoop/TechStack";
 import Nav from "./components/Nav/Nav";
 

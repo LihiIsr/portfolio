@@ -1,4 +1,3 @@
-import React from 'react'
 import CountUp from '../UI/CountUp'
 
 export default function StatCard({children, from, to, duration}) {

@@ -1,4 +1,3 @@
-import React from 'react'
 import './About.css'
 import myCv from '../../assets/files/ליהי ישראלי- קוח.pdf'
 import cookieSrc from '../../assets/images/cookie.svg';
@@ -30,7 +29,7 @@ export default function About() {
         </div>
       
         <div className="float-wrapper">
-            <img className="cookie" src={cookieSrc}/>
+            <img className="cookie" src={cookieSrc} alt='cookie the kitten'/>
         </div>
              
         <img

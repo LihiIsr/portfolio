@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { FaCircleArrowUp } from "react-icons/fa6";
 import './stylesUI.css'
 

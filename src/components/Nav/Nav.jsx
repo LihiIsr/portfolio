@@ -23,7 +23,7 @@ export default function Nav({onAboutClick, onProjectsClick, onContactClick}){
     }, [hamburgerOpen]);
 
     const toggleHamburger = () =>{
-        setHamburgerOpen(!hamburgerOpen);
+        setHamburgerOpen(prev => !prev);
     }
 
     const closeNav = () =>{

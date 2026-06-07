@@ -1,4 +1,3 @@
-import React from 'react'
 import LogoLoop from './LogoLoop';
 import { SiReact, SiVuedotjs, SiTailwindcss, SiFirebase, SiFigma, SiJavascript, SiCss3, SiHtml5, SiGit, SiNextdotjs } from 'react-icons/si';
 import { useState, useEffect } from 'react';

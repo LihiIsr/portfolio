@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaLinkedin } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
@@ -11,7 +10,7 @@ export default function ContactMe({className}) {
       <> 
         <CustomHeader className='custom-header contact-header'>Let's get in touch!</CustomHeader>
           <div className='contact-inner'>
-            <img className="contact-character" src={seatedCharacterSrc}/>
+            <img className="contact-character" src={seatedCharacterSrc} alt='seated character'/>
               <div className='contact-box'>
                 <p className="characterText">looking forward to hearing from you ;)</p>
 
