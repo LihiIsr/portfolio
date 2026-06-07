@@ -1,5 +1,5 @@
 import React from 'react'
-import StatCard from './UI/StatCard'
+import StatCard from './StatCard'
 
 export default function Stats() {
   return (

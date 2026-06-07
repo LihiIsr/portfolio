@@ -29,6 +29,52 @@
   z-index: 7;
 }
 
+.nav-item{
+  cursor:pointer ;
+  text-decoration: none;
+  transition: 0.2;
+  margin: 10px;
+}
+
+.nav-item:hover{
+  text-decoration: underline !important;
+}
+
+.logo {
+  height: fit-content;
+  left: 3vw;
+  position: absolute;
+  top: 1vh;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+
+.my-name {
+  color: #271c11;
+  font-family: var(--main);
+  font-size: 64px;
+  font-size: clamp(32px, 7vw, 56px);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  width: fit-content;
+}
+
+ .frontend-developer {
+  color: #271c11;
+  font-family: var(--regular);
+  font-size: 32px;
+  font-size: clamp(16px, 3vw, 26px);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  width: fit-content;
+}
+
 @media (max-width: 767px) {
   .navigation ul {
     position: absolute;

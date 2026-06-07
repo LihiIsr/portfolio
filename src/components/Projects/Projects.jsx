@@ -4,6 +4,8 @@ import  Card  from "./ProjectCard";
 import siteCover from '../../assets/images/machtzavim.jpg';
 import lomdaCover from '../../assets/images/lomda.jpg';
 
+import './Projects.css'
+
 export default function Cards() {
   return (
       <div className="cards">

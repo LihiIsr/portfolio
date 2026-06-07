@@ -1,5 +1,5 @@
-import Hamburger from "./UI/Hamburger";
-import NavItem from './UI/NavItem';
+import Hamburger from "./Hamburger";
+import NavItem from './NavItem';
 import "./Nav.css";
 
 import { useState, useEffect } from 'react';

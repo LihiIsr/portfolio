@@ -1,4 +1,4 @@
-import '../Nav.css';
+import './Nav.css';
 export default function Hamburger({ isOpen }) {
   return (
     <div className={`hamburger-icon ${isOpen ? "open" : ""}`}>

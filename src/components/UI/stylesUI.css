@@ -24,57 +24,6 @@
   }
 }
 
-.image-wrapper{
-  overflow: hidden;
-  width: 100%;
-}
-
-.card-img{
-  width: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-
-@media (hover: hover) {
-  .card-instance:hover .card-img{
-  transform: scale(1.15);
-}
-.card-instance:hover{
-    box-shadow: 8px 8px 7px rgba(234, 233, 233, 0.237);
-}
-.card-action:hover{
-    color: rgb(255, 255, 255);
-    color: #5e3f35;
-}
-}
-
-.card-text{
-    display: flex;
-    margin-left: 3px;
-    text-align: left;
-    gap: 10px;
-    flex-direction: column;
-    flex: 1;
-}
-
-.card-title{
-  font-size: clamp(1.4rem, 2vw, 2rem);
-  margin: 10px 0;
-}
-
-.most-recent{
-    color: rgba(94, 63, 53, 1);
-    font-weight: bolder;
-}
-
-.tags-container{
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-  margin-bottom: 6px;
-}
-
 .tag{
     border-radius: 15px;
     border: 1px solid gray;
@@ -83,40 +32,6 @@
     color: #4b4949;
     font-size: 0.6rem;  
     line-height: 1.5;
-}
-
-.card-actions{
-    display: flex;
-    gap: 15px;
-    font-weight: 500;
-}
-
-.card-action{
-    all: unset;
-    text-decoration: underline;
-    font-family: var(--main);
-font-size: clamp(0.875rem, 0.9vw, 1rem);
-    text-transform: capitalize;
-}
-
-.card-bottom{
-    margin-top: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
- .contact {
-    position: relative;
-    height: fit-content;
-    width: 100vw;
-    z-index: 5;
-    gap: 10vh;
-    display: flex;
-    flex-direction: column;
-    border-top: 2px black dashed;
-    margin-top: 10vh;
-    margin-bottom: 3vh;
 }
 
 .custom-header{
@@ -128,51 +43,6 @@ font-size: clamp(1.8rem, 3.7vw, 2.25rem);
   letter-spacing: 0;
   line-height: normal;
   text-decoration: underline;
-  width: fit-content;
-}
-
-.contact-header{
-  text-decoration:none;
-  font-size: clamp(1rem, 3.7vw, 2.25rem);
-  padding-left: 7vw;
-  padding-top: 20vh;
-}
-
-.contact-inner{
- display:flex;
- gap: 1.5vw;
-  align-items:center;
-  margin-left: 4vw;
-}
-
-.contact-box{
-  display:flex;
-  flex-direction:column;
-  gap:6vh;
-}
-
-.contact-icons{
-  display: flex;
-  gap: 5vw;
-  z-index: 5;
-
-}
-
-.contact-icon{
-  color: rgba(186, 176, 161, 1);
-  width: 5em;
-  height: 5em;
-}
-
-.contact-character{
-  width: 15vw;
-}
-
-.clients-stats {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  height: fit-content;
   width: fit-content;
 }
 
@@ -190,7 +60,6 @@ font-size: clamp(1.8rem, 3.7vw, 2.25rem);
   width: fit-content;
 }
 
-
 .count-up-text {
   color: #271c11;
   font-family: var(--main);
@@ -204,70 +73,20 @@ font-size: clamp(1.8rem, 3.7vw, 2.25rem);
   width: fit-content;
 }
 
-  
 .logo-loop-container {
   height: 150px;
   overflow: hidden;
 }
 
-@media (min-width:1800px) {
-  .card-instance{
-    width: 370px !important;
-  }
-}
-
-@media (min-width:768px) and (max-width: 1045px) {
-
-  .contact-icon{
-  width: 3.5em;
-  height: 3.5em;
-}
-.contact-box{
-  gap: 4vh !important;
-}
-
-}
-
 @media (max-width:768px) {
-
-  .contact-icon{
-  width: 2.5em;
-  height: 2.5em;
-}
-
-.contact-box{
-  gap: 3vh !important;
-}
-
-.contact-header{
-  padding-top: 14vh !important;
-}
-
 .custom-header{
   align-self: flex-start;
   padding-left: 9vw !important;
 }
-  .contact-icon{
-  width: 2em;
-  height: 2em;
-}
+
 }
 
 @media (max-width:420px) {
-
-  .contact-icon{
-  width: 2em;
-  height: 2em;
-}
-
-.contact-box{
-  gap: 1vh !important;
-}
-
-.contact{
-  gap: 4vh;
-}
-
 .top-scroll-btn{
   right: 10px !important;
 }

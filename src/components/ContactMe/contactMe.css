@@ -1,0 +1,121 @@
+ .contact {
+    position: relative;
+    height: fit-content;
+    width: 100vw;
+    z-index: 5;
+    gap: 10vh;
+    display: flex;
+    flex-direction: column;
+    border-top: 2px black dashed;
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+}
+
+
+.contact-header{
+  text-decoration:none;
+  font-size: clamp(1rem, 3.7vw, 2.25rem);
+  padding-left: 7vw;
+  padding-top: 20vh;
+}
+
+.contact-inner{
+ display:flex;
+ gap: 1.5vw;
+  align-items:center;
+  margin-left: 4vw;
+}
+
+.contact-box{
+  display:flex;
+  flex-direction:column;
+  gap:6vh;
+}
+
+.contact-icons{
+  display: flex;
+  gap: 5vw;
+  z-index: 5;
+
+}
+
+.contact-icon{
+  color: rgba(186, 176, 161, 1);
+  width: 5em;
+  height: 5em;
+}
+
+.contact-character{
+  width: 15vw;
+}
+
+.characterText{
+  color:#d7cfc4;
+  color: #f1ebe3;
+  font-size: 2vw;
+}
+
+@media (max-width: 1250px){
+
+  .characterText{
+  font-size: 2.7vw !important;
+}
+}
+
+@media (min-width:768px) and (max-width: 1045px) {
+
+  .contact-icon{
+  width: 3.5em;
+  height: 3.5em;
+}
+.contact-box{
+  gap: 4vh !important;
+}
+
+}
+
+
+@media (max-width:768px) {
+
+  .contact-icon{
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.contact-box{
+  gap: 3vh !important;
+}
+
+.contact-header{
+  padding-top: 14vh !important;
+}
+
+  .contact-icon{
+  width: 2em;
+  height: 2em;
+}
+
+.contact-character{
+  width: 19vw !important;
+}
+
+}
+
+@media (max-width:420px) {
+
+  .contact-icon{
+  width: 2em;
+  height: 2em;
+}
+
+.contact-box{
+  gap: 1vh !important;
+}
+
+.contact{
+  gap: 4vh;
+}
+
+}
+
+

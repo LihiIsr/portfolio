@@ -1,5 +1,5 @@
 import React from 'react'
-import CountUp from './CountUp'
+import CountUp from '../UI/CountUp'
 
 export default function StatCard({children, from, to, duration}) {
   return (

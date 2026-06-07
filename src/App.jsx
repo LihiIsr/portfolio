@@ -1,15 +1,15 @@
 
-import "./style.css";
+import "./App.css";
 import { useRef } from 'react';
 
-import Projects from "./components/UI/Projects";
+import Projects from "./components/Projects/Projects";
 import ScrollToTopButton from "./components/UI/ScrollToTopBtn";
-import ContactMe from "./components/ContactMe";
-import About from "./components/About";
+import ContactMe from "./components/ContactMe/ContactMe";
+import About from "./components/About/About";
 import CustomHeader from "./components/UI/CustomHeader";
-import Stats from "./components/Stats";
-import TechStack from "./components/UI/TechStack";
-import Nav from "./components/Nav";
+import Stats from "./components/Stats/stats";
+import TechStack from "./components/UI/LogoLoop/TechStack";
+import Nav from "./components/Nav/Nav";
 
 export const App = () => {
   const aboutRef = useRef(null);
@@ -21,7 +21,7 @@ export const App = () => {
   };
 
   return (
-    <div className="desktop">
+    <div className="main-wrapper">
 
       <Nav onProjectsClick={() => scrollToSection(projectsRef)} 
       onAboutClick={() => scrollToSection(aboutRef)} 
