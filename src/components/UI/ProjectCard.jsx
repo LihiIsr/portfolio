@@ -12,15 +12,19 @@ export default function Card(
   openGitHub
 }) {
   return (
-    <div className={className}  onClick={() => window.open(openProject, "_blank")}>
+    <div className={className}  
+      onClick={(e) => {
+          if (e.target.closest("a")) return;
+          window.open(openProject, "_blank");
+        }}  >
       <div className="image-wrapper">
         <img className="card-img" src={coverImg} />
       </div>
-      <span className='card-text'>
+      <div className='card-text'>
         <h1 className='card-title'>{title}</h1>
         <p style={{textAlign:'left'}}>{text}</p>
         {mostRecent && <p className='most-recent'>#most recent</p>}
-        <span className='card-bottom'>
+        <div className='card-bottom'>
             <div className='card-actions'>
               <a href={openProject} className='card-action'  target="_blank"
                 rel="noopener noreferrer">open project</a>
@@ -31,9 +35,9 @@ export default function Card(
             <div className="tags-container">
             {tags.map((tag,index)=> <Tag key={index} name={tag}/>)}
             </div>
-        </span>
+        </div>
        
-      </span>
+      </div>
 
     </div>
   )

@@ -99,6 +99,7 @@
  padding-top: 2vh;  
  padding-left: 2vw;
   color: #d7cfc4;
+  color: #f1ebe3;
 }
 
 .actions{
@@ -189,6 +190,7 @@
 
 .desktop .download-text {
   color: #bab0a1;
+  color: #f1ebe3;
   font-family: var(--regular);
   font-size: clamp(0.55rem, 2vw, 1.8rem);  
   font-weight: 400;
@@ -244,6 +246,7 @@
 
 .characterText{
   color:#d7cfc4;
+  color: #f1ebe3;
   font-size: 2vw;
 }
 

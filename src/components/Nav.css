@@ -79,6 +79,7 @@
 }
 
 .hamburger-icon {
+  color: #271c11;
 position: relative;
 right: 2vw;
   width: 1.5rem;
@@ -93,7 +94,9 @@ right: 2vw;
   width: 2rem;
   height: 0.25rem;
   border-radius: 10px;
-  background-color: black;
+  /* background-color: black; */
+  /* background-color: #271c11; */
+  background-color: currentColor;
   transform-origin: center;
   transition: all 0.3s linear;
 }
