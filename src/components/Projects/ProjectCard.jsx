@@ -27,9 +27,9 @@ export default function Card(
             <div className='card-actions'>
               <a href={openProject} className='card-action'  target="_blank"
                 rel="noopener noreferrer">open project</a>
-              <a href={openGitHub} className='card-action'
+             {openGitHub && <a href={openGitHub} className='card-action'
                 target="_blank"
-                rel="noopener noreferrer">open on github</a>
+                rel="noopener noreferrer">open on github</a>}
             </div>
             <div className="tags-container">
             {tags.map((tag)=> <Tag key={tag} name={tag}/>)}

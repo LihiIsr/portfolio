@@ -2,6 +2,8 @@ import  Card  from "./ProjectCard";
 
 import siteCover from '../../assets/images/machtzavim.jpg';
 import lomdaCover from '../../assets/images/lomda.jpg';
+import lomda2Cover from '../../assets/images/lomda2.jpg';
+
 
 import './Projects.css'
 
@@ -31,10 +33,24 @@ export default function Cards() {
                     for a new employee.
                   </>
                 }
-                mostRecent
-                tags={['react', 'javascript', 'css']}
+                tags={['react', 'javascript', 'css', 'figma']}
                 openProject="https://elearning-safety-benatav.web.app/"
                 openGitHub="https://github.com/LihiIsr/safety-benatav"
+              />
+              <Card
+                coverImg={lomda2Cover}
+                className="card-instance"
+                title="E-Learning module"
+                text={
+                  <>
+                    An interactive learning module built in Storyline 360, 
+                    showcasing accessibility barriers through realistic situations.                   
+
+                  </>
+                }
+                mostRecent
+                tags={['storyline', 'figma']}
+                openProject="https://lihiisr.github.io/accessibility-course/story.html"
               />
         </div>
   )
