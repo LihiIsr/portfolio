@@ -10,17 +10,22 @@ import './Projects.css'
 export default function Cards() {
   return (
       <div className="cards">
-              <Card 
-              coverImg={siteCover} 
-              className="card-instance" 
-              title="Brand Site "
-              text='A branded site for the IDF unit "machtzavim", features include a CRUD application with firestore for an admin.'
-              tags={['vue', 'javascript', 'css','firestore', 'crud-application']}
-              openProject="https://machtzavim-site.web.app/"
-              openGitHub="https://github.com/LihiIsr/machtzavim-site-origin"
-               />
-    
-              <Card
+         <Card
+                coverImg={lomda2Cover}
+                className="card-instance"
+                title="E-Learning module"
+                text={
+                  <>
+                    An interactive learning module built in Storyline 360, 
+                    showcasing accessibility barriers through realistic situations.                   
+
+                  </>
+                }
+                mostRecent
+                tags={['storyline', 'figma']}
+                openProject="https://lihiisr.github.io/accessibility-course/story.html"
+          />
+          <Card
                 coverImg={lomdaCover}
                 className="card-instance"
                 title="E-Learning platform"
@@ -37,21 +42,18 @@ export default function Cards() {
                 openProject="https://elearning-safety-benatav.web.app/"
                 openGitHub="https://github.com/LihiIsr/safety-benatav"
               />
-              <Card
-                coverImg={lomda2Cover}
-                className="card-instance"
-                title="E-Learning module"
-                text={
-                  <>
-                    An interactive learning module built in Storyline 360, 
-                    showcasing accessibility barriers through realistic situations.                   
-
-                  </>
-                }
-                mostRecent
-                tags={['storyline', 'figma']}
-                openProject="https://lihiisr.github.io/accessibility-course/story.html"
-              />
+              <Card 
+              coverImg={siteCover} 
+              className="card-instance" 
+              title="Brand Site "
+              text='A branded site for the IDF unit "machtzavim", features include a CRUD application with firestore for an admin.'
+              tags={['vue', 'javascript', 'css','firestore', 'crud-application']}
+              openProject="https://machtzavim-site.web.app/"
+              openGitHub="https://github.com/LihiIsr/machtzavim-site-origin"
+               />
+    
+              
+             
         </div>
   )
 }

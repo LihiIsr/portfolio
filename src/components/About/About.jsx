@@ -7,12 +7,18 @@ export default function About() {
   return (
     <>
         <div className="about">
-                <p>
+              <p>
+                Hi! I create interactive e-learning experiences that make complex information engaging, accessible, and easy to understand.
+              </p>
+              <p>
+                Using tools like Articulate Storyline alongside React and Vue.js, I develop digital learning solutions that blend thoughtful design with modern development.
+              </p>
+                {/* <p>
                   Hi! i'm a front-end developer specializing in UI/UX design and interactive web experiences using modern technologies like React and Vue.js.
                 </p>
                 <p>
                 I'm focused on clean design, responsive interfaces, and thoughtful user experiences.
-                </p>
+                </p> */}
                 <p className="cookie-text">
                 My adorable kitten, Cookie, appreciates your visit :)
                 </p>

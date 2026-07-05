@@ -60,7 +60,9 @@ export default function Nav({onAboutClick, onProjectsClick, onContactClick}){
 
              <div className="logo">
                     <div className="my-name">Lihi Israeli</div>
-                    <div className="frontend-developer">Frontend Developer</div>
+                    {/* <div className="frontend-developer">Frontend Developer</div> */}
+                    <div className="frontend-developer">E-Learning Developer</div>
+
             </div>
 
         </div>
