@@ -3,6 +3,8 @@ import  Card  from "./ProjectCard";
 import siteCover from '../../assets/images/machtzavim.jpg';
 import lomdaCover from '../../assets/images/lomda.jpg';
 import lomda2Cover from '../../assets/images/lomda2.jpg';
+import riseCover from '../../assets/images/risePhising.jpg';
+import geniallyCover from '../../assets/images/geniallySafety.jpg';
 
 
 import './Projects.css'
@@ -10,6 +12,36 @@ import './Projects.css'
 export default function Cards() {
   return (
       <div className="cards">
+                 <Card
+                coverImg={geniallyCover}
+                className="card-instance"
+                title="Micro-Learning module"
+                text={
+                  <>
+            
+                  A gamified microlearning experience, created in Genially.
+                  <br/>
+                   designed to improve safety awareness by challenging learners to identify potential hazards and make safer decisions in the workplace.                  </>
+                }
+                mostRecent
+                tags={['genially', 'canva', 'gemini', 'chatGPT']}
+                openProject="https://view.genially.com/6a638c692374438654152fc9"
+          />
+         <Card
+                coverImg={riseCover}
+                className="card-instance"
+                title="Micro-Learning module"
+                text={
+                  <>
+                   An interactive phishing awareness microlearning module built in Articulate Rise.
+                   <br/>
+                    designed to help learners identify phishing attempts, understand common risks, and develop safer digital habits.
+                  </>
+                }
+                
+                tags={['rise', 'canva', 'gemini', 'chatGPT']}
+                openProject="https://lihiisr.github.io/phishing-course/#/"
+          />
          <Card
                 coverImg={lomda2Cover}
                 className="card-instance"
@@ -21,8 +53,8 @@ export default function Cards() {
 
                   </>
                 }
-                mostRecent
-                tags={['storyline', 'figma']}
+                
+                tags={['storyline', 'figma','gemini', 'chatGPT', 'claude']}
                 openProject="https://lihiisr.github.io/accessibility-course/story.html"
           />
           <Card
